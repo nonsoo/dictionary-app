@@ -17,7 +17,7 @@ Additional Features include:
 - Play the audio file for a word when it's available
 - Switch between serif, sans serif, and monospace fonts
 
-## Developmennt
+## Development
 
 After you've forked and cloned the repo on to your local machine, go to the project directory and install the dependencies.
 

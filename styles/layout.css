@@ -2,7 +2,7 @@
 
 :root {
   /* FONTS */
-  --ff-prmy: "Nunito", sans-serif;
+  --ff-prmy: "Sofia Sans Condensed", sans-serif;
 
   --fs-sm-prmy: 0.75rem;
   --fs-sm-sec: 0.75rem;
@@ -12,30 +12,19 @@
   --fs-four: 2rem;
 
   --fw-prmy: 400;
-  --fw-sec: 500;
+  --fw-sec: 600;
   --fw-tri: 700;
 
   /* COLOURS */
-  --col-text-prmy: hsl(180, 20%, 25%);
-  --col-text-sec: hsl(0, 0%, 100%);
-  --col-text-tri: hsl(0, 0%, 23%);
+  --col-text-prmy: hsl(0, 0%, 25%);
+  --col-text-sec: hsl(300, 0%, 59%);
 
   --col-background-prmy: hsl(270, 17%, 98%);
   --col-background-sec: hsl(0, 0%, 100%);
-  --col-background-tri: hsl(240, 9%, 91%);
 
-  --col-acc-prmy: hsl(180, 19%, 86%);
-  --col-acc-sec: hsl(180, 20%, 25%);
-  --col-acc-tri: hsl(236, 36%, 77%);
-  --col-acc-four: rgba(217, 217, 217, 0.5);
-
-  /* markdown parser Colours */
-  --col-md-acc-prmy: hsl(236, 36%, 77%, 0.5);
-  --col-md-acc-sec: hsl(236, 66%, 60%);
-
-  /* box Shadows */
-  --box-shadow: 2.4px 7.9px 10px rgba(0, 0, 0, 0.025),
-    19px 63px 80px rgba(0, 0, 0, 0.05);
+  --col-acc-prmy: hsl(276, 81%, 90%);
+  --col-acc-sec: hsl(275, 46%, 55%);
+  --col-acc-tri: hsl(300, 0%, 59%);
 
   /* border radius */
   --border-radius-prmy: 10px;
@@ -111,10 +100,6 @@
   .layoutDiv > * {
     width: 100%;
   }
-
-  .test {
-    margin: 10rem auto;
-  }
 }
 
 @media screen and (min-width: 50rem) {
@@ -130,8 +115,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --col-text-prmy: hsl(0, 0%, 100%);
-    --col-text-sec: hsl(0, 0%, 23%);
-    --col-text-tri: hsl(0, 0%, 100%);
+    --col-text-sec: hsl(0, 0%, 25%);
 
     --col-background-prmy: hsl(0, 0%, 16%);
     --col-background-sec: hsl(0, 0%, 8%);
