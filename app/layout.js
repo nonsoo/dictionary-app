@@ -1,4 +1,4 @@
-import "./globals.css";
+import "@styles/layout.css";
 import { Sofia_Sans_Condensed } from "next/font/google";
 
 const sofia_sans_condensed = Sofia_Sans_Condensed({ subsets: ["latin"] });
