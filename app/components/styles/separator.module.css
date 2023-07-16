@@ -1,4 +1,4 @@
-.seperator {
+.separator {
   font-size: var(--fs-sec);
   display: flex;
   justify-content: center;
@@ -7,7 +7,7 @@
   gap: 1em;
 }
 
-.seperator::after {
+.separator::after {
   display: block;
   content: "";
 

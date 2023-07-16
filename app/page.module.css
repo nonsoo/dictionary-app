@@ -57,3 +57,14 @@
   fill: var(--col-acc-sec);
   font-size: 3em;
 }
+
+.source {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.source_item:nth-child(2) {
+  font-size: 0.95rem;
+}

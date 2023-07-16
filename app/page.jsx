@@ -9,7 +9,10 @@ import { useState } from "react";
 import Navbar from "./components/navBar";
 
 import IconContexts from "@utils/context/icon-context";
-import Separator from "./components/separator";
+
+import Meaning from "./components/meaning";
+
+import { test_word } from "@utils/constants/consts";
 export default function Home() {
   const [userInput, setUserInput] = useState("");
   return (
@@ -30,16 +33,24 @@ export default function Home() {
 
       <section className={styles.dictionary_word}>
         <div>
-          <p className={styles.dictionary_word_word}>Keyboard</p>
-          <p className={styles.dictionary_word_pronounce}>/sdsdsd:ds/</p>
+          <p className={styles.dictionary_word_word}>{test_word[0].word}</p>
+          <p className={styles.dictionary_word_pronounce}>
+            {test_word[0].phonetic}
+          </p>
         </div>
 
         <IconContexts className={styles.play_icon}>
           <FiPlayCircle />
         </IconContexts>
       </section>
+      <Meaning meanings={test_word[0].meanings} />
 
-      <Separator seperator_name="Noun" />
+      <section className={styles.source}>
+        <p className={styles.source_item}>Source</p>
+        <a className={styles.source_item} href={`test_word[0].sourceUrls[0]`}>
+          {test_word[0].sourceUrls[0]}
+        </a>
+      </section>
     </main>
   );
 }
