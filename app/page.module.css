@@ -1,42 +1,70 @@
-.main {
-  max-width: 1200px;
-
-  /* margin: 0 auto; */
-
-  margin-inline: auto;
-
-  padding: 1em;
-}
-
 .navBar {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 1em;
+
+  padding-block: 1em;
 }
 
 .book_icon {
   margin-right: auto;
-}
-
-.search {
-  background-color: var(--col-acc-tri, black);
-  border: none;
-  border-radius: 10px;
-  width: 100%;
-
-  /* flex-basis: 500px; */
-}
-.search:focus {
-  border: none;
+  font-size: 1.75em;
 }
 
 .searchWrappers {
   background-color: var(--col-acc-tri, black);
   display: flex;
-
-  /* flex-direction: column; */
   justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+
+  border-radius: 10px;
+  padding: 0.5em;
 }
-.searchWrappers:focus-within {
-  border: 2px solid red;
+
+.search {
+  background-color: var(--col-acc-tri, black);
+  border: none;
+
+  width: 100%;
+  padding: 0.25em;
+}
+
+.search_icon {
+  font-size: 1.25em;
+
+  stroke: var(--col-acc-prmy);
+}
+
+.dictionary_word {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0em;
+}
+
+.dictionary_word_word {
+  font-size: var(--fs-four);
+  font-weight: var(--fw-tri);
+}
+
+.dictionary_word_pronounce {
+  color: var(--col-acc-sec);
+  font-size: var(--fs-sec);
+}
+
+.play_icon {
+  fill: var(--col-acc-sec);
+  font-size: 3em;
+}
+
+.source {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.source_item:nth-child(2) {
+  font-size: 0.95rem;
 }
