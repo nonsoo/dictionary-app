@@ -3,9 +3,6 @@
 import styles from "./page.module.css";
 import { AiOutlineSearch } from "react-icons/ai";
 import { FiPlayCircle } from "react-icons/fi";
-
-import { Suspense } from "react ";
-
 import { useState, useEffect } from "react";
 
 import Navbar from "./components/navBar";
@@ -20,12 +17,6 @@ export default function Home() {
   const [userInput, setUserInput] = useState("");
 
   const [res, setRes] = useState();
-
-  // const res = await axios.get(
-  //   `https://api.dictionaryapi.dev/api/v2/entries/en/hello`
-  // );
-
-  // console.log(res.data);
 
   useEffect(() => {
     (async () => {
@@ -66,14 +57,6 @@ export default function Home() {
           </button>
         </form>
 
-        <Suspense fallback={<Loading />}>
-          <button>
-            <IconContexts className={styles.search_icon}>
-              <AiOutlineSearch />
-            </IconContexts>
-          </button>
-        </Suspense>
-
         <section className={styles.dictionary_word}>
           <div>
             <p className={styles.dictionary_word_word}>{res[0].word}</p>
@@ -90,7 +73,7 @@ export default function Home() {
 
         <section className={styles.source}>
           <p className={styles.source_item}>Source</p>
-          <a className={styles.source_item} href={`test_word[0].sourceUrls[0]`}>
+          <a className={styles.source_item} href={res[0].sourceUrls}>
             {res[0].sourceUrls[0]}
           </a>
         </section>
